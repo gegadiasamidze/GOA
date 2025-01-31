@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* ელემენტები გადაადგილდება ახალ რიგში */
+            justify-content: space-between;
+            background-color: #e9ecef;
+            padding: 20px;
+        }
+        .item {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            width: 150px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">ელემენტი 1</div>
+        <div class="item">ელემენტი 2</div>
+        <div class="item">ელემენტი 3</div>
+        <div class="item">ელემენტი 4</div>
+        <div class="item">ელემენტი 5</div>
+    </div>
+
+</body>
+</html>
+/*display: flex; — კონტეინერი ხდება ფლექს-კონტეინერი.
+flex-direction — განლაგების მიმართულება (წიგნი, სვეტი, შებრუნებული).
+flex-grow — ელემენტი იზრდება, რომ შეავსოს დარჩენილი სივრცე.
+flex-shrink — ელემენტი მცირდება, როცა სივრცე არ არის საკმარისი.
+flex-wrap — ელემენტებს შეუძლიათ გადავიდნენ ახალ რიგში, როდესაც სივრცე არ არის საკმარისი.
